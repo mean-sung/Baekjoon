@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define MAX 100
 
 void NamingBasket(int basket[], int N);
 void ReverseBasket(int basket[], int i, int j);
@@ -10,7 +11,7 @@ int main(void)
     int i, j = 0;
     scanf("%d %d", &N, &M);
 
-    int basket[N];
+    int basket[MAX];
     NamingBasket(basket, N);
 
     for (int r = 0; r < M; r++)
